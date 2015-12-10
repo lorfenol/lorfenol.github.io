@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Titre du site</title>
+<!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	</head>
+
+
+
+	<body>
+		<!--<header>
+		<h1>{{page.titre}} </h1>
+		<p>{{site.description}}<p>
+		</header>-->
+		{% include header.html %}
+		<main class="container">
+		<p>{{site.p}}</p>
+		<ul>
+		{{content}}
+		
+    	
+		</ul>		
+		</main>
+		<footer>
+		{% include footer.html %}
+		<footer>
+	</body>
+</html>

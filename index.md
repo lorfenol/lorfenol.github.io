@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="row">
+{% for post in site.posts limit:3 %} 			
+	<div class="col-md-4 img-portfolio">
+	<a href="{{ post.url }}">
+	<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+	</a>
+	<h3>
+	<a href="{{ post.url }}">{{ post.title }}</a>
+	</h3>
+
+	</div>
+{% endfor %}
+</div>
